@@ -1,7 +1,10 @@
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class hello {
+public class Hello {
 	public static void main(String[] args ) {
-		System.out.println("hello world");
+		Logger logger
+				= Logger.getLogger(Hello.class.getName());
+			logger.log(Level.INFO, "hello world");
 	}
-
 }
